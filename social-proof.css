@@ -1,0 +1,293 @@
+@font-face {
+    font-family:'league' ;
+    src: url(LeagueSpartan-VariableFont_wght.ttf);
+    
+}
+
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+body{
+    display: grid;
+    place-items: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* flex-direction: column; */
+    overflow: scroll;
+}
+
+
+*{
+    --text-color:hsl(300, 43%, 22%);
+    --text-color-2:hsl(303, 10%, 53%);
+    --text-color-3:hsl(333, 80%, 67%);
+    --rating-box: hsl(300, 24%, 96%);
+    
+}
+
+.top-des{
+    position: absolute;
+    left: 0%;
+    top: 0;
+    margin: 0;
+}
+
+.bot-des{
+    bottom: 0;
+    right: -10%;
+    position: absolute;
+    margin: 0;
+}
+
+.head{
+    max-width: 85%;
+    margin: 0 auto;
+   
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color:var(--text-color) ;
+    font-family: league;
+    font-size: 35px;
+    width: 250px;
+    font-weight: 700;
+}
+
+.remark{
+    color: var(--text-color-2);
+    font-size: 15px;
+    width: 60%;
+    font-family: league;
+    font-weight: 500;
+
+}
+
+
+/* .first-text {
+    position: absolute;
+    top: 10%;
+    left: 11%;
+} */
+
+/* .rating-group{
+    position: absolute;
+    right:11% ;
+    top: 10%;
+    
+} */
+
+.ratings{
+    background-color: var(--rating-box);
+    border-radius: 5px;
+    gap: 5cm;
+    height: 30px;
+    width: 350px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.ratings:nth-child(2){
+    margin-left: 30px;
+}
+
+.ratings:nth-child(3){
+    margin-left: 60px;
+}
+
+
+
+span{
+    padding-left: 20px;
+    font-family: league;
+    color: var(--text-color);
+    font-weight: 700;
+    
+}
+
+/* .first-text{
+    width: 50%;
+} */
+
+
+.comment-box{
+    width: 25%;
+    background-color: var(--text-color);
+    padding: 30px;
+    font-family: league;
+    font-size: 15px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.customer-name{
+    color: #fff;
+    margin: 5px;
+}
+
+
+.user-comment{
+    color: #fff;
+    float: none;
+}
+
+.buyer{
+    color: var(--text-color-3);
+    margin: 5px;
+}
+
+.comment-section{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    /* left: 11%; */
+    top: 50%;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.user-name{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.user{
+    padding: 0;
+    margin: 0;
+}
+
+.comment-box:nth-child(2){
+    margin-top: 20px;
+}
+
+.comment-box:nth-child(3){
+    margin-top: 40px;
+}
+
+
+@media(max-width:1066px) and (min-width:600px){
+    .comment-box:nth-child(2){
+        margin-top: 40px;
+    }
+    .comment-box:nth-child(3){
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:600px){
+    .first-text{
+        top: 0;
+        left: 0;
+       position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .head{
+        
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .remark{
+        text-align: center;
+        width: fit-content;
+        margin: 0 20px;
+        margin-bottom: 30px;
+    }
+    .rating-group{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+
+    .ratings{
+        height: 50px;
+        width: 100%;
+    }
+
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .ratings:nth-child(2){
+        margin-left: 0px;
+    }
+    
+    .ratings:nth-child(3){
+        margin-left: 0px;
+    }
+
+    .comment-section{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        top: 0;
+        gap: 20px;
+        
+    }
+
+    .comment-box{
+        width: fit-content;
+        margin: 0 20px;
+    }
+
+    .comment-box:nth-child(2){
+        margin-top: 0px;
+        margin: 0 20px;
+    }
+    
+    .comment-box:nth-child(3){
+        margin-top: 0px;
+
+    }
+}
+
+
+
+
+

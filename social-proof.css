@@ -17,11 +17,11 @@ html,body{
 body{
     display: grid;
     place-items: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* flex-direction: column; */
-   
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: top left, bottom right;
+   background-size: auto 70%;
+   background-color: white;
 }
 
 
@@ -33,19 +33,7 @@ body{
     
 }
 
-.top-des{
-    position: absolute;
-    left: 0%;
-    top: 0;
-    margin: 0;
-}
 
-.bot-des{
-    bottom: 0%;
-    right: 0%;
-    position: absolute;
-    margin: 0;
-}
 
 .head{
     max-width: 85%;
@@ -182,6 +170,9 @@ span{
 }
 
 @media(max-width:600px){
+    
+
+    
     .first-text{
         top: 0;
         left: 0;
@@ -274,6 +265,13 @@ span{
 }
 
 
-
+@media screen and (min-width:600px) {
+    body{
+        background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    
+     background-position: top left, bottom right;
+  
+    }
+}
 
 
